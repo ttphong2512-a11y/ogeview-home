@@ -1,0 +1,36 @@
+name: Update Anime Data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 */6 * * *"
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Create data folder
+        run: mkdir -p data
+
+      - name: Create placeholder files
+        run: |
+          echo "[]" > data/ranking.json
+          echo "[]" > data/trending.json
+          echo "[]" > data/seasons.json
+          echo "[]" > data/schedule.json
+
+      - name: Commit
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add data
+          git diff --cached --quiet || git commit -m "Update anime data"
+
+      - name: Push
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
