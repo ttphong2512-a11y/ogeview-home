@@ -2,5 +2,11 @@
   "site_name": "Ogeview",
   "search": "Search anime...",
   "popular": "Popular Anime",
-  "language": "Language"
+  "trending": "Trending",
+  "latest": "Latest Updates",
+  "top_rated": "Top Rated",
+  "genres": "Genres",
+  "watch_now": "Watch Now",
+  "view_more": "View More",
+  "footer": "Discover the world of anime with Ogeview."
 }
