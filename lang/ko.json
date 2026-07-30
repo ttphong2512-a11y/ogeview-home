@@ -2,5 +2,11 @@
   "site_name": "Ogeview",
   "search": "애니메이션 검색...",
   "popular": "인기 애니메이션",
-  "language": "언어"
+  "trending": "트렌드",
+  "latest": "최신 업데이트",
+  "top_rated": "높은 평점",
+  "genres": "장르",
+  "watch_now": "지금 보기",
+  "view_more": "더 보기",
+  "footer": "Ogeview와 함께 애니메이션 세계를 만나보세요."
 }
