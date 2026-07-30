@@ -1,6 +1,12 @@
 {
   "site_name": "Ogeview",
   "search": "Pesquisar anime...",
-  "popular": "Anime Popular",
-  "language": "Idioma"
+  "popular": "Animes Populares",
+  "trending": "Em Alta",
+  "latest": "Últimas Atualizações",
+  "top_rated": "Mais Bem Avaliados",
+  "genres": "Gêneros",
+  "watch_now": "Assistir Agora",
+  "view_more": "Ver Mais",
+  "footer": "Descubra o mundo dos animes com Ogeview."
 }
