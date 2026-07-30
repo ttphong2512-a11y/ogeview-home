@@ -1,6 +1,12 @@
 {
   "site_name": "Ogeview",
-  "search": "Cari anime...",
-  "popular": "Anime Populer",
-  "language": "Bahasa"
+  "search": "Buscar anime...",
+  "popular": "Anime Popular",
+  "trending": "Tendencias",
+  "latest": "Últimas Actualizaciones",
+  "top_rated": "Mejor Valorados",
+  "genres": "Géneros",
+  "watch_now": "Ver Ahora",
+  "view_more": "Ver Más",
+  "footer": "Descubre el mundo del anime con Ogeview."
 }
