@@ -2,5 +2,11 @@
   "site_name": "Ogeview",
   "search": "Tìm kiếm anime...",
   "popular": "Anime nổi bật",
-  "language": "Ngôn ngữ"
+  "trending": "Xu hướng",
+  "latest": "Mới cập nhật",
+  "top_rated": "Đánh giá cao",
+  "genres": "Thể loại",
+  "watch_now": "Xem ngay",
+  "view_more": "Xem thêm",
+  "footer": "Khám phá thế giới anime cùng Ogeview."
 }
