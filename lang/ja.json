@@ -1,6 +1,17 @@
 {
   "site_name": "Ogeview",
+  "search": "アニメを{
+  "site_name": "Ogeview",
   "search": "アニメを検索...",
+  "popular": "人気アニメ",
+  "trending": "トレンド",
+  "latest": "最新更新",
+  "top_rated": "高評価",
+  "genres": "ジャンル",
+  "watch_now": "今すぐ見る",
+  "view_more": "もっと見る",
+  "footer": "Ogeviewでアニメの世界を楽しもう。"
+  }索...",
   "popular": "人気アニメ",
   "language": "言語"
 }
