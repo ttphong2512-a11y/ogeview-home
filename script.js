@@ -1,124 +1,40 @@
 const languages = [
-    "vi",
-    "en",
-    "ja",
-    "th",
-    "id",
-    "es",
-    "pt",
-    "fr",
-    "ko",
-    "zh-CN"
+  "vi",
+  "en",
+  "ja",
+  "th",
+  "id",
+  "es",
+  "pt",
+  "fr",
+  "ko",
+  "zh-CN"
 ];
 
+// Lấy ngôn ngữ trình duyệt
+let lang = navigator.language || "vi";
 
-// Nhận ngôn ngữ người dùng
-
-let userLang = localStorage.getItem("ogeview-lang");
-
-
-if(!userLang){
-
-    let browserLang = navigator.language || "vi";
-
-    browserLang = browserLang.split("-")[0];
-
-
-    userLang = languages.includes(browserLang)
-        ? browserLang
-        : "vi";
-
-
-    localStorage.setItem(
-        "ogeview-lang",
-        userLang
-    );
-
+if (!languages.includes(lang)) {
+  lang = lang.split("-")[0];
 }
 
-
-
-console.log(
-    "Ngôn ngữ:",
-    userLang
-);
-
-
-
-// Khu vực anime
-
-const animeList =
-document.querySelector(".anime-grid");
-
-
-
-// Dữ liệu thử để kiểm tra giao diện
-
-const anime = [
-
-{
-title:"Demon Slayer",
-year:"2019",
-type:"TV"
-},
-
-{
-title:"One Piece",
-year:"1999",
-type:"TV"
-},
-
-{
-title:"Jujutsu Kaisen",
-year:"2020",
-type:"TV"
+if (!languages.includes(lang)) {
+  lang = "en";
 }
 
-];
+// Tải file ngôn ngữ
+async function loadLanguage() {
+  const res = await fetch(`lang/${lang}.json`);
+  const text = await res.json();
 
+  document.getElementById("siteName").textContent = text.site_name;
 
+  document.getElementById("popularTitle").textContent = text.popular;
 
-function showAnime(){
+  document.getElementById("searchInput").placeholder = text.search;
 
-
-animeList.innerHTML="";
-
-
-anime.forEach(item=>{
-
-
-let card=document.createElement("div");
-
-
-card.innerHTML=`
-
-<div style="
-background:#171717;
-padding:15px;
-border-radius:15px;
-">
-
-<h3>${item.title}</h3>
-
-<p>
-${item.type} • ${item.year}
-</p>
-
-</div>
-
-`;
-
-
-
-animeList.appendChild(card);
-
-
-
-});
-
-
+  document.getElementById("language").innerHTML =
+    "🌐 " + lang.toUpperCase();
 }
 
-
-
-showAnime();
+loadLanguage();
