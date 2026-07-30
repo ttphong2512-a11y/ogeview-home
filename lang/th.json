@@ -1,6 +1,12 @@
 {
   "site_name": "Ogeview",
   "search": "ค้นหาอนิเมะ...",
-  "popular": "อนิเมะยอดนิยม",
-  "language": "ภาษา"
+  "popular": "อนิเมะแนะนำ",
+  "trending": "กำลังมาแรง",
+  "latest": "อัปเดตล่าสุด",
+  "top_rated": "คะแนนสูง",
+  "genres": "ประเภท",
+  "watch_now": "รับชมตอนนี้",
+  "view_more": "ดูเพิ่มเติม",
+  "footer": "ค้นพบโลกของอนิเมะกับ Ogeview"
 }
