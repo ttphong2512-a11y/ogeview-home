@@ -2,5 +2,11 @@
   "site_name": "Ogeview",
   "search": "搜索动漫...",
   "popular": "热门动漫",
-  "language": "语言"
+  "trending": "热门趋势",
+  "latest": "最新更新",
+  "top_rated": "高评分",
+  "genres": "分类",
+  "watch_now": "立即观看",
+  "view_more": "查看更多",
+  "footer": "与 Ogeview 一起探索动漫世界。"
 }
